@@ -1,0 +1,189 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[document]{ragged2e}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{enumitem,amssymb,graphicx}
+
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+  {<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont} 
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingSmall}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingBig}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+      {\small#5} & {\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{\scalebox{0.5}{\raisebox{0.65ex}{$\blacksquare$}}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\textbf{\LARGE Mário Reichow}\\
+Software Developer from Brazil\\\vspace{\baselineskip}
+%\href{https://mwj96.dev/}{mwj96.dev}\\\vspace{\baselineskip} % <======
+
+{\Centering % <=========================================================
+
+\raisebox{-0.20\height}{\Large \faInbox} \space \href{mailto:mario.dornelles@gmail.com}{mario.dornelles@gmail.com} \hfill % <======
+\raisebox{-0.20\height}{\Large \faPhone} \space (+5551) 98604-1491 \hfill % <======
+\raisebox{-0.20\height}{\Large \faGithub} \space \href{https://github.com/markartur}{markartur} \hfill % <======
+\raisebox{-0.20\height}{\Large \faLinkedinSquare} \space \href{https://www.linkedin.com/in/mario-reichow/}{mario-reichow} % <======
+} % <===================================================================
+
+%-----------EDUCATION-----------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pontifícia Universidade Católica do Rio Grande do Sul}{Porto Alegre, RS}
+      {B.S. Information Systems}{December 2017}	
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------------
+
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {Java, Javascript, C\#, Progress}
+    \resumeSubItem{Full Stack}
+      {HTML, CSS, Angular, Node.js, Express, Oracle, AWS, Kafka}
+    \resumeSubItem{Methodologies}
+      {Scrum, Kanban, Jira, Rally, Confluence } 
+    \resumeSubItem{Other}
+      {Git, Gitflow, Gradle, JUnit, Mocha, Sonar}
+  \resumeSubHeadingListEnd
+
+\renewcommand{\labelitemi}{}
+
+%-----------EXPERIENCE-----------------
+
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {ADP}{Porto Alegre, RS}
+      {\textbf{Senior Software Developer}}{September 2018 -- }
+      \resumeItemListStart
+        \item {Helped design, build and deploy a client facing analytics tool, using Java and Oracle, developing features such as metrics and reports sharing between users and roles, and a partner module, where managers can see and manipulate metrics and dashboards from hundreds of clients.}
+	\item {Traveled to India for knowledge transfer sessions, helping colleagues assume control of a delivered feature.}
+        \item {Currently building a next generation reporting tool, with state of the art CI/CD and development practices, using Node and Java microservices within AWS cloud environment.}
+        \item {Mentored junior team members.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ADP}{Porto Alegre, RS}
+      {\textbf{Software Developer}}{August 2014 -- September 2018}
+      \resumeItemListStart
+        \item
+          {Developed new features on a legacy Java HCM application, with clients on the large enterprise segment.}
+        \item
+          {Created and supported features for the biggest ADP client, with 150k users. Handling critical features such as hiring and payroll processing, with aggressive deadlines and compliance requirements.}
+        \item
+          {Helped develop a service for instant SOAP communication between clients and government entities, with more than a hundred different event types.}
+        \item
+          {Traveled dozens of times for project deliveries, client onboarding and internal user training.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Waysys}{Porto Alegre, RS}
+      {\textbf{Software Developer}}{February 2014 -- August 2014}
+      \resumeItemListStart
+        \item
+          {Java development of new features and legacy code maintenance of a tobacco processing plant system with clients in Brazil and Africa.}
+        \item
+          {Helped improve the in-house framework, speeding up the development of new features.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Dell}{Porto Alegre, RS}
+      {\textbf{Performance Testing Intern}}{August 2012 -- February 2014}
+      \resumeItemListStart
+        \item
+          {Tested performance requirements on multiple applications, using both UI and API tools.}
+        \item
+          {Developed scripts for load testing using C, C\# and Java.}
+        \item
+          {Compiled and analyzed test scenario executions, identifying issues like response time bottlenecks and spikes on hardware resources.}
+      \resumeItemListEnd 
+
+\resumeSubHeadingListEnd
+
+
+\end{document}
